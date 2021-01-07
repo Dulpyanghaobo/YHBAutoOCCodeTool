@@ -130,8 +130,10 @@
                 extensionCode = [extensionCode stringByAppendingFormat:@"%@\n", object.propertyCode];
             }
         }
-        NSString *code =[NSString stringWithFormat:@"//MARK: 描述 - cellModel\n@property (strong, nonatomic)%@Model *cellModel;\n\n}",viewClass.className];
-        extensionCode = [extensionCode stringByAppendingFormat:@"%@\n",code];
+        if ([viewClass.superClassName hasSuffix:@"CollectionViewCell"]) {
+            NSString *code =[NSString stringWithFormat:@"//MARK: 描述 - cellModel\n@property (strong, nonatomic)%@Model *cellModel;\n\n}",viewClass.className];
+            extensionCode = [extensionCode stringByAppendingFormat:@"%@\n",code];
+        }
         extensionCode = [extensionCode stringByAppendingString:@"@end\n\n"];
         return extensionCode;
     }
