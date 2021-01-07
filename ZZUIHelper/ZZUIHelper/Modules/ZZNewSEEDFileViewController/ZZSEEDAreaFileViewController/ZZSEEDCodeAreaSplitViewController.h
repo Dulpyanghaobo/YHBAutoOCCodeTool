@@ -1,5 +1,5 @@
 //
-//  ZZSEEDCodeAreaViewController.h
+//  ZZSEEDCodeAreaSplitViewController.h
 //  ZZUIHelper
 //
 //  Created by 杨皓博 on 2021/1/8.
@@ -10,9 +10,7 @@
 
 NS_ASSUME_NONNULL_BEGIN
 
-@interface ZZSEEDCodeAreaViewController : NSTabViewController
-
-@property (nonatomic, strong) NSString *className;
+@interface ZZSEEDCodeAreaSplitViewController : NSSplitViewController
 
 @end
 

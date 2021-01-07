@@ -171,6 +171,8 @@
 		DA42429825A77AD7009B88F7 /* ZZSEEDCodeAreaViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = DA42429625A77AD7009B88F7 /* ZZSEEDCodeAreaViewController.xib */; };
 		DAF9A09E25A7836C00F46E35 /* ZZNewCrossPlatformViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = DAF9A09C25A7836C00F46E35 /* ZZNewCrossPlatformViewController.m */; };
 		DAF9A09F25A7836C00F46E35 /* ZZNewCrossPlatformViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = DAF9A09D25A7836C00F46E35 /* ZZNewCrossPlatformViewController.xib */; };
+		DAF9A0BB25A7A65200F46E35 /* ZZSEEDCodeAreaSplitViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = DAF9A0B925A7A65200F46E35 /* ZZSEEDCodeAreaSplitViewController.m */; };
+		DAF9A0BC25A7A65200F46E35 /* ZZSEEDCodeAreaSplitViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = DAF9A0BA25A7A65200F46E35 /* ZZSEEDCodeAreaSplitViewController.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -466,6 +468,9 @@
 		DAF9A09B25A7836C00F46E35 /* ZZNewCrossPlatformViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ZZNewCrossPlatformViewController.h; sourceTree = "<group>"; };
 		DAF9A09C25A7836C00F46E35 /* ZZNewCrossPlatformViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ZZNewCrossPlatformViewController.m; sourceTree = "<group>"; };
 		DAF9A09D25A7836C00F46E35 /* ZZNewCrossPlatformViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ZZNewCrossPlatformViewController.xib; sourceTree = "<group>"; };
+		DAF9A0B825A7A65200F46E35 /* ZZSEEDCodeAreaSplitViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ZZSEEDCodeAreaSplitViewController.h; sourceTree = "<group>"; };
+		DAF9A0B925A7A65200F46E35 /* ZZSEEDCodeAreaSplitViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ZZSEEDCodeAreaSplitViewController.m; sourceTree = "<group>"; };
+		DAF9A0BA25A7A65200F46E35 /* ZZSEEDCodeAreaSplitViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ZZSEEDCodeAreaSplitViewController.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -1419,6 +1424,9 @@
 				DA42429425A77AD7009B88F7 /* ZZSEEDCodeAreaViewController.h */,
 				DA42429525A77AD7009B88F7 /* ZZSEEDCodeAreaViewController.m */,
 				DA42429625A77AD7009B88F7 /* ZZSEEDCodeAreaViewController.xib */,
+				DAF9A0B825A7A65200F46E35 /* ZZSEEDCodeAreaSplitViewController.h */,
+				DAF9A0B925A7A65200F46E35 /* ZZSEEDCodeAreaSplitViewController.m */,
+				DAF9A0BA25A7A65200F46E35 /* ZZSEEDCodeAreaSplitViewController.xib */,
 			);
 			path = ZZSEEDAreaFileViewController;
 			sourceTree = "<group>";
@@ -1516,6 +1524,7 @@
 				C2AC3A9D1E78F79D006FB8C3 /* UIImageView.tiff in Resources */,
 				C2AC3A9F1E78F79D006FB8C3 /* UINavigationBar.tiff in Resources */,
 				C2AC3AAC1E78F79D006FB8C3 /* UITabBar.tiff in Resources */,
+				DAF9A0BC25A7A65200F46E35 /* ZZSEEDCodeAreaSplitViewController.xib in Resources */,
 				C2AC3A941E78F79D006FB8C3 /* UIActivityIndicatorView.tiff in Resources */,
 				C2AC3AAD1E78F79D006FB8C3 /* UITabBarController.tiff in Resources */,
 				C2D738C71E74F8ED00344E5F /* ZZPropertyXYWHCell.xib in Resources */,
@@ -1685,6 +1694,7 @@
 				C2A10C801E5A41E6000960D9 /* ZZWindowController.m in Sources */,
 				C21DDF081E6FF075000BCD9C /* ZZUITextFieldDelegate.m in Sources */,
 				C21DDF0E1E6FF07B000BCD9C /* ZZUITextViewDelegate.m in Sources */,
+				DAF9A0BB25A7A65200F46E35 /* ZZSEEDCodeAreaSplitViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

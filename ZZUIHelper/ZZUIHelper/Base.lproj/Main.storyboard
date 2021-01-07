@@ -634,7 +634,7 @@
                         <windowPositionMask key="initialPositionMask" leftStrut="YES" rightStrut="YES" topStrut="YES" bottomStrut="YES"/>
                         <rect key="contentRect" x="196" y="240" width="500" height="300"/>
                         <rect key="screenRect" x="0.0" y="0.0" width="1680" height="1027"/>
-                        <value key="minSize" type="size" width="1000" height="600"/>
+                        <value key="minSize" type="size" width="1800" height="800"/>
                         <toolbar key="toolbar" implicitIdentifier="557F7765-2D10-427D-922B-D35FF651B72A" autosavesConfiguration="NO" displayMode="iconAndLabel" sizeMode="regular" id="ezI-WB-37G">
                             <allowedToolbarItems>
                                 <toolbarItem implicitItemIdentifier="9F5FB132-7721-4EFD-9EE7-D0C0004A910C" label="自动化测试" paletteLabel="自动化测试" tag="-1" image="NSTouchBarPlayPauseTemplate" id="HX9-yi-sam">

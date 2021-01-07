@@ -23,12 +23,12 @@
 @implementation ZZSEEDCodeAreaViewController
 - (void)loadView {
     [super loadView];
-    [self.cellModelHItem setLabel:@"cellModel.h"];
-    [self.cellModelMItem setLabel:@"cellModel.m"];
-    [self.sectionItemHItem setLabel:@"sectionItem.h"];
-    [self.sectionItemMItem setLabel:@"sectionItem.m"];
-    [self.cellHItem setLabel:@"cell.h"];
-    [self.cellMItem setLabel:@"cell.m"];
+    [self.cellModelHItem setLabel:[NSString stringWithFormat:@"%@CellModel.h",self.className]];
+    [self.cellModelMItem setLabel:[NSString stringWithFormat:@"%@CellModel.m",self.className]];
+    [self.sectionItemHItem setLabel:[NSString stringWithFormat:@"%@SectionItem.h",self.className]];
+    [self.sectionItemMItem setLabel:[NSString stringWithFormat:@"%@SectionItem.m",self.className]];
+    [self.cellHItem setLabel:[NSString stringWithFormat:@"%@Cell.h",self.className]];
+    [self.cellMItem setLabel:[NSString stringWithFormat:@"%@Cell.m",self.className]];
 
 }
 - (void)viewDidLoad {

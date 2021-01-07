@@ -8,8 +8,9 @@
 
 #import "ZZCodeAreaViewController.h"
 #import "ZZSEEDCodeAreaViewController.h"
-
-
+#import "ZZSEEDCodeAreaSplitViewController.h"
+#import "ZZCellModelViewController.h"
+#import "ZZPropertyAreaViewController.h"
 @interface ZZCodeAreaViewController ()
 @end
 
@@ -41,8 +42,21 @@
     });
 }
 - (void)reloadSEEDData {
-    ZZSEEDCodeAreaViewController *seedAreaVC = [[ZZSEEDCodeAreaViewController alloc]init];
+    if ([ZZClassHelper sharedInstance].curClass) {
+        NSString *className = [ZZClassHelper sharedInstance].curClass.className;
+        
+        ZZSEEDCodeAreaViewController *deareaVC = [[ZZSEEDCodeAreaViewController alloc]initWithNibName:@"ZZSEEDCodeAreaViewController" bundle:nil];
+        deareaVC.className = className;
+    ZZSEEDCodeAreaSplitViewController *seedAreaVC = [[ZZSEEDCodeAreaSplitViewController alloc]initWithNibName:NSStringFromClass([ZZSEEDCodeAreaSplitViewController class]) bundle:nil];
+    seedAreaVC.splitViewItems = @[
+        [NSSplitViewItem splitViewItemWithViewController:[[ZZPropertyAreaViewController alloc] init]],
+
+        
+        [NSSplitViewItem splitViewItemWithViewController:deareaVC],
+        [NSSplitViewItem splitViewItemWithViewController:[[ZZCellModelViewController alloc] initWithNibName:@"ZZCellModelViewController" bundle:nil]]
+    ];
     self.view.window.contentView = seedAreaVC.view;
+    }
 }
 
 @end

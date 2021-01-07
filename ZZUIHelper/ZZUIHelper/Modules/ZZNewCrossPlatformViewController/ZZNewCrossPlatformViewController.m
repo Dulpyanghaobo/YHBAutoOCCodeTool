@@ -49,7 +49,7 @@
 }
 
 - (void)javaClickEvent:(NSButton *)sender {
-    sender.selectedTag =  YES;
+//    sender.selectedTag =  YES;
 }
 
 - (NSButton *)javaButton {
