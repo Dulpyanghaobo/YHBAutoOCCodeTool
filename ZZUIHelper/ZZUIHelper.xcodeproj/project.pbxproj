@@ -169,6 +169,8 @@
 		DA42429025A77936009B88F7 /* ZZCellModelViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = DA42428E25A77936009B88F7 /* ZZCellModelViewController.xib */; };
 		DA42429725A77AD7009B88F7 /* ZZSEEDCodeAreaViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = DA42429525A77AD7009B88F7 /* ZZSEEDCodeAreaViewController.m */; };
 		DA42429825A77AD7009B88F7 /* ZZSEEDCodeAreaViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = DA42429625A77AD7009B88F7 /* ZZSEEDCodeAreaViewController.xib */; };
+		DAF9A09E25A7836C00F46E35 /* ZZNewCrossPlatformViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = DAF9A09C25A7836C00F46E35 /* ZZNewCrossPlatformViewController.m */; };
+		DAF9A09F25A7836C00F46E35 /* ZZNewCrossPlatformViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = DAF9A09D25A7836C00F46E35 /* ZZNewCrossPlatformViewController.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -461,6 +463,9 @@
 		DA42429425A77AD7009B88F7 /* ZZSEEDCodeAreaViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ZZSEEDCodeAreaViewController.h; sourceTree = "<group>"; };
 		DA42429525A77AD7009B88F7 /* ZZSEEDCodeAreaViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ZZSEEDCodeAreaViewController.m; sourceTree = "<group>"; };
 		DA42429625A77AD7009B88F7 /* ZZSEEDCodeAreaViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ZZSEEDCodeAreaViewController.xib; sourceTree = "<group>"; };
+		DAF9A09B25A7836C00F46E35 /* ZZNewCrossPlatformViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ZZNewCrossPlatformViewController.h; sourceTree = "<group>"; };
+		DAF9A09C25A7836C00F46E35 /* ZZNewCrossPlatformViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ZZNewCrossPlatformViewController.m; sourceTree = "<group>"; };
+		DAF9A09D25A7836C00F46E35 /* ZZNewCrossPlatformViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ZZNewCrossPlatformViewController.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -817,7 +822,7 @@
 		C22239E31E5815F5002CB428 /* Modules */ = {
 			isa = PBXGroup;
 			children = (
-				DA42427A25A767E8009B88F7 /* New Group */,
+				DAF9A09A25A7831500F46E35 /* ZZNewCrossPlatformViewController */,
 				C21789C51E55D64500AF8BEE /* Main.storyboard */,
 				C2223A081E5875DA002CB428 /* ZZCodeAreaViewController */,
 				C2A10C4C1E5A1583000960D9 /* ZZControlAreaViewController */,
@@ -1407,13 +1412,6 @@
 			path = Masonry;
 			sourceTree = "<group>";
 		};
-		DA42427A25A767E8009B88F7 /* New Group */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = "New Group";
-			sourceTree = "<group>";
-		};
 		DA42427B25A767F4009B88F7 /* ZZSEEDAreaFileViewController */ = {
 			isa = PBXGroup;
 			children = (
@@ -1442,6 +1440,16 @@
 				DA42428E25A77936009B88F7 /* ZZCellModelViewController.xib */,
 			);
 			path = CellModelViewController;
+			sourceTree = "<group>";
+		};
+		DAF9A09A25A7831500F46E35 /* ZZNewCrossPlatformViewController */ = {
+			isa = PBXGroup;
+			children = (
+				DAF9A09B25A7836C00F46E35 /* ZZNewCrossPlatformViewController.h */,
+				DAF9A09C25A7836C00F46E35 /* ZZNewCrossPlatformViewController.m */,
+				DAF9A09D25A7836C00F46E35 /* ZZNewCrossPlatformViewController.xib */,
+			);
+			path = ZZNewCrossPlatformViewController;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -1554,6 +1562,7 @@
 				C2A10CB81E5AEF39000960D9 /* ZZNewFileViewController.xib in Resources */,
 				C2AC3AA51E78F79D006FB8C3 /* UIProgressView.tiff in Resources */,
 				C2AC3AB51E78F79D006FB8C3 /* UIViewController.tiff in Resources */,
+				DAF9A09F25A7836C00F46E35 /* ZZNewCrossPlatformViewController.xib in Resources */,
 				C2AC3AA61E78F79D006FB8C3 /* UIScrollView.tiff in Resources */,
 				C2AC3AA11E78F79D006FB8C3 /* UINavigationItem.tiff in Resources */,
 				C2AC3AB31E78F79D006FB8C3 /* UITextView.tiff in Resources */,
@@ -1583,6 +1592,7 @@
 				C21DDF221E6FF2BC000BCD9C /* ZZUIResponder+ClassHelper.m in Sources */,
 				C2D738BA1E74F8ED00344E5F /* ZZPropertyMethodCell.m in Sources */,
 				C2D6CA281E5BE12700EEF76B /* MASViewAttribute.m in Sources */,
+				DAF9A09E25A7836C00F46E35 /* ZZNewCrossPlatformViewController.m in Sources */,
 				C2223A0B1E5875F8002CB428 /* ZZCodeAreaViewController.m in Sources */,
 				C21789BC1E55D64500AF8BEE /* AppDelegate.m in Sources */,
 				C22D8D8B1E728F9200A33083 /* ZZCreatorCodeBlock.m in Sources */,

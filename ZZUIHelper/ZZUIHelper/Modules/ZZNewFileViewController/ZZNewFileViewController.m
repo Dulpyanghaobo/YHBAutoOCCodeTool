@@ -8,6 +8,7 @@
 
 #import "ZZNewFileViewController.h"
 #import "ZZSEEDNewFileViewController.h"
+#import "ZZNewCrossPlatformViewController.h"
 
 @interface ZZNewFileViewController () <NSComboBoxDelegate>
 
@@ -92,7 +93,10 @@
 }
 
 - (void)CrossPlatformClickEvent {
-    
+    ZZNewCrossPlatformViewController *ViewController = [[ZZNewCrossPlatformViewController alloc]initWithNibName:@"ZZNewCrossPlatformViewController" bundle:nil];
+    [self presentViewControllerAsSheet:ViewController];
+    [self dismissViewController:self];
+
 }
 
 - (NSButton *)seedButton {
