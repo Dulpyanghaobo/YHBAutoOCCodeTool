@@ -7,6 +7,7 @@
 //
 
 #import "ZZNewFileViewController.h"
+#import "ZZSEEDNewFileViewController.h"
 
 @interface ZZNewFileViewController () <NSComboBoxDelegate>
 
@@ -18,13 +19,16 @@
 
 @property (weak) IBOutlet NSButton *cancelButton;
 
+@property (nonatomic, strong) NSButton *seedButton;
+
+
 @end
 
 @implementation ZZNewFileViewController
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    
+    [self.view addSubview:self.seedButton];
     self.classNameTF.stringValue = [ZZUIHelperConfig sharedInstance].classPrefix;
     [self.superClassCobox addItemsWithObjectValues:[ZZClassHelper sharedInstance].superClassArray];
     [self.superClassCobox selectItemAtIndex:0];
@@ -76,6 +80,21 @@
 
 - (IBAction)cancelButtonClick:(id)sender {
     [self dismissViewController:self];
+}
+
+- (void)SEEDGenerator {
+    ZZSEEDNewFileViewController *SEEDNewFileViewController = [[ZZSEEDNewFileViewController alloc]initWithNibName:@"ZZSEEDNewFileViewController" bundle:nil];
+    [self presentViewControllerAsSheet:SEEDNewFileViewController];
+    [self dismissViewController:self];
+
+}
+
+- (NSButton *)seedButton {
+    if (!_seedButton) {
+        _seedButton = [NSButton buttonWithTitle:@"SEEDCode" target:self action:@selector(SEEDGenerator)];
+        _seedButton.frame = CGRectMake(26, 20, 100, 20);
+    }
+    return _seedButton;
 }
 
 @end

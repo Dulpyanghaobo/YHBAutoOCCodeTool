@@ -53,7 +53,10 @@
              @"UITableViewCell",
              @"UICollectionViewCell",
              @"UIImageView",
-             @"UIScrollView"];
+             @"UIScrollView",
+             @"UIButton",
+             @"NSObject"
+    ];
 }
 
 @end

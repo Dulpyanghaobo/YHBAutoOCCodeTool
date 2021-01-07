@@ -36,6 +36,12 @@
 - (void)reloadData
 {
     if ([ZZClassHelper sharedInstance].curClass) {
+//        if ([[ZZClassHelper sharedInstance].curClass isKindOfClass:[ZZNSObject class]]) {
+//            ZZNSObject *curClass = [ZZClassHelper sharedInstance].curClass;
+//            CGRect rect = self.fragaria.textView.visibleRect;
+//            [self.fragaria setString:[[ZZCreatorManager sharedInstance] hFileForViewClass:curClass]];
+//
+//        }
         ZZUIResponder *curClass = [ZZClassHelper sharedInstance].curClass;
         CGRect rect = self.fragaria.textView.visibleRect;
         [self.fragaria setString:[[ZZCreatorManager sharedInstance] hFileForViewClass:curClass]];

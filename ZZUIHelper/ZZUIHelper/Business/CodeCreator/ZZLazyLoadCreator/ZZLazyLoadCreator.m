@@ -23,6 +23,7 @@
 
 @implementation ZZLazyLoadCreator
 
+/** 自动生成懒加载*/
 - (id)init
 {
     if (self = [super init]) {
@@ -129,6 +130,8 @@
                 extensionCode = [extensionCode stringByAppendingFormat:@"%@\n", object.propertyCode];
             }
         }
+        NSString *code =[NSString stringWithFormat:@"//MARK: 描述 - cellModel\n@property (strong, nonatomic)%@Model *cellModel;\n\n}",viewClass.className];
+        extensionCode = [extensionCode stringByAppendingFormat:@"%@\n",code];
         extensionCode = [extensionCode stringByAppendingString:@"@end\n\n"];
         return extensionCode;
     }
@@ -139,14 +142,17 @@
 - (NSString *)m_implementationCodeForViewClass:(ZZUIResponder *)viewClass
 {
     NSMutableString *implementationCode = [NSMutableString stringWithFormat:@"@implementation %@\n\n", viewClass.className];
-    
+    if ( [viewClass.superClassName hasSuffix:@"CollectionViewCell"]) {
+        NSString *code = @"//MARK: 描述 - seed_cellWithData\n- (void)seed_cellWithData:(NSObject<SEEDCollectionCellItemProtocol> *)itemModel {\n_cellModel = itemModel;\n}\n\n";
+        [implementationCode appendString:code];
+    }
     for (ZZCreatorCodeBlock *block in self.modules) {
         NSString *code = block.action(viewClass);
         if (code.length > 0) {
             [implementationCode appendString:block.action(viewClass)];
         }
     }
-    
+    NSLog(@"%@",implementationCode);
     [implementationCode appendString:@"@end\n"];
     return implementationCode;
 }
@@ -159,6 +165,9 @@
     NSString *code = copyrightCode;
     if ([viewClass.superClassName hasPrefix:@"UI"]) {
         code = [code stringByAppendingString:@"#import <UIKit/UIKit.h>"];
+        if ([viewClass.superClassName hasSuffix:@"CollectionViewCell"]) {
+            code = [code stringByAppendingString:@"\n#import \"SEEDCollectionCellProtocol.h\""];
+        }
     }
     else {
         code = [code stringByAppendingFormat:@"#import \"%@.h\"", viewClass.superClassName];

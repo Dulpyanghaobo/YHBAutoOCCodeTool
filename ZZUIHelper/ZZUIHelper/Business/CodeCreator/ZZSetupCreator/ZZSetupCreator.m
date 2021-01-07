@@ -174,7 +174,7 @@
     NSString *copyrightCode = [[ZZUIHelperConfig sharedInstance] copyrightCodeByFileName:fileName];
     NSString *code = copyrightCode;
     if ([viewClass.superClassName hasPrefix:@"UI"]) {
-        code = [code stringByAppendingString:@"#import <UIKit/UIKit.h>"];
+        code = [code stringByAppendingString:@"#import <UIKit/UIKit.h> \n #import \"SEEDEmptyVerticalSectionItem\""];
     }
     else {
         code = [code stringByAppendingFormat:@"#import \"%@.h\"", viewClass.superClassName];

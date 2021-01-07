@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		0480D2ED25A704FC00C6DA03 /* ZZSEEDNewFileViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0480D2EB25A704FC00C6DA03 /* ZZSEEDNewFileViewController.m */; };
+		0480D2EE25A704FC00C6DA03 /* ZZSEEDNewFileViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0480D2EC25A704FC00C6DA03 /* ZZSEEDNewFileViewController.xib */; };
 		C2154E4A1E710C5100E3D18C /* ZZSettingItemsAddViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C2154E481E710C5100E3D18C /* ZZSettingItemsAddViewController.m */; };
 		C2154E4B1E710C5100E3D18C /* ZZSettingItemsAddViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = C2154E491E710C5100E3D18C /* ZZSettingItemsAddViewController.xib */; };
 		C21789BC1E55D64500AF8BEE /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = C21789BB1E55D64500AF8BEE /* AppDelegate.m */; };
@@ -179,6 +181,9 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		0480D2EA25A704FC00C6DA03 /* ZZSEEDNewFileViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ZZSEEDNewFileViewController.h; sourceTree = "<group>"; };
+		0480D2EB25A704FC00C6DA03 /* ZZSEEDNewFileViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ZZSEEDNewFileViewController.m; sourceTree = "<group>"; };
+		0480D2EC25A704FC00C6DA03 /* ZZSEEDNewFileViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ZZSEEDNewFileViewController.xib; sourceTree = "<group>"; };
 		C2154E471E710C5100E3D18C /* ZZSettingItemsAddViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZZSettingItemsAddViewController.h; sourceTree = "<group>"; };
 		C2154E481E710C5100E3D18C /* ZZSettingItemsAddViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZZSettingItemsAddViewController.m; sourceTree = "<group>"; };
 		C2154E491E710C5100E3D18C /* ZZSettingItemsAddViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ZZSettingItemsAddViewController.xib; sourceTree = "<group>"; };
@@ -457,6 +462,23 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		0480D2E625A6FA5B00C6DA03 /* ZZNewSEEDFileViewController */ = {
+			isa = PBXGroup;
+			children = (
+				0480D2EA25A704FC00C6DA03 /* ZZSEEDNewFileViewController.h */,
+				0480D2EB25A704FC00C6DA03 /* ZZSEEDNewFileViewController.m */,
+				0480D2EC25A704FC00C6DA03 /* ZZSEEDNewFileViewController.xib */,
+			);
+			path = ZZNewSEEDFileViewController;
+			sourceTree = "<group>";
+		};
+		0480D2EF25A70A6500C6DA03 /* SEEDUICollectionViewCell */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = SEEDUICollectionViewCell;
+			sourceTree = "<group>";
+		};
 		C21789AE1E55D64500AF8BEE = {
 			isa = PBXGroup;
 			children = (
@@ -543,6 +565,7 @@
 		C21DDEAC1E6FEF42000BCD9C /* Views */ = {
 			isa = PBXGroup;
 			children = (
+				0480D2EF25A70A6500C6DA03 /* SEEDUICollectionViewCell */,
 				C21DDEBD1E6FEF42000BCD9C /* ZZUIView */,
 				C21DDEB51E6FEF42000BCD9C /* ZZUILabel */,
 				C21DDEB41E6FEF42000BCD9C /* ZZUIImageView */,
@@ -781,15 +804,16 @@
 			isa = PBXGroup;
 			children = (
 				C21789C51E55D64500AF8BEE /* Main.storyboard */,
-				C2A10C7D1E5A41D0000960D9 /* ZZWindowController */,
+				C2223A081E5875DA002CB428 /* ZZCodeAreaViewController */,
+				C2A10C4C1E5A1583000960D9 /* ZZControlAreaViewController */,
+				C2A10C471E5A0E67000960D9 /* ZZElementAreaViewController */,
 				C2223A0D1E587674002CB428 /* ZZMainViewController */,
 				C2A10CB31E5AEF39000960D9 /* ZZNewFileViewController */,
 				C2A10CAD1E5AEF0B000960D9 /* ZZNewPropertyViewController */,
-				C2A10C9E1E5AE11C000960D9 /* ZZSettingViewController */,
-				C2A10C471E5A0E67000960D9 /* ZZElementAreaViewController */,
-				C2223A081E5875DA002CB428 /* ZZCodeAreaViewController */,
+				0480D2E625A6FA5B00C6DA03 /* ZZNewSEEDFileViewController */,
 				C2D7388A1E74F8ED00344E5F /* ZZPropertyAreaViewController */,
-				C2A10C4C1E5A1583000960D9 /* ZZControlAreaViewController */,
+				C2A10C9E1E5AE11C000960D9 /* ZZSettingViewController */,
+				C2A10C7D1E5A41D0000960D9 /* ZZWindowController */,
 			);
 			path = Modules;
 			sourceTree = "<group>";
@@ -1406,10 +1430,9 @@
 			};
 			buildConfigurationList = C21789B21E55D64500AF8BEE /* Build configuration list for PBXProject "ZZUIHelper" */;
 			compatibilityVersion = "Xcode 3.2";
-			developmentRegion = English;
+			developmentRegion = en;
 			hasScannedForEncodings = 0;
 			knownRegions = (
-				English,
 				en,
 				Base,
 			);
@@ -1438,6 +1461,7 @@
 				C2AC3AA41E78F79D006FB8C3 /* UIPickerView.tiff in Resources */,
 				C2AC3AA71E78F79D006FB8C3 /* UISearchBar.tiff in Resources */,
 				C2AC3AA81E78F79D006FB8C3 /* UISegmentedControl.tiff in Resources */,
+				0480D2EE25A704FC00C6DA03 /* ZZSEEDNewFileViewController.xib in Resources */,
 				C2AC3AA21E78F79D006FB8C3 /* UIPageControl.tiff in Resources */,
 				C2AC3A961E78F79D006FB8C3 /* UIBarButtonItemFixedSpace.tiff in Resources */,
 				C2AC3AA91E78F79D006FB8C3 /* UISlider.tiff in Resources */,
@@ -1574,6 +1598,7 @@
 				C2AEFB431E75AC1000972320 /* ZZUIProgressView.m in Sources */,
 				C2D738E31E752FA000344E5F /* ZZUIView+Masonry.m in Sources */,
 				C2D6CA261E5BE12700EEF76B /* MASConstraintMaker.m in Sources */,
+				0480D2ED25A704FC00C6DA03 /* ZZSEEDNewFileViewController.m in Sources */,
 				C21DDEF61E6FF053000BCD9C /* ZZUISwitch.m in Sources */,
 				C2D6CA271E5BE12700EEF76B /* MASLayoutConstraint.m in Sources */,
 				C2AC94D42266FBA70094366C /* ZZZZFLEXAngel.m in Sources */,
