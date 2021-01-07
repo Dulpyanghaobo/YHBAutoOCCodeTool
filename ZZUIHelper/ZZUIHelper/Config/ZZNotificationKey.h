@@ -18,4 +18,7 @@
 #define     NOTI_SETTING_EDIT                   @"NOTI_SETTING_EDIT"
 #define     NOTI_SETTING_SELECT_CREATOR         @"NOTI_SETTING_SELECT_CREATOR"      // 设置-选中了生成器
 
+#define     NOTI_NEW_SEEDPROJECT                    @"NOTI_NEW_SEEDPROJECT"                 // 新建SEED框架文件
+
+
 #endif /* ZZNotificationKey_h */

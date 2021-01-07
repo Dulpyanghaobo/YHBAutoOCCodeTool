@@ -21,6 +21,7 @@
 
 @property (nonatomic, strong) NSButton *seedButton;
 
+@property (nonatomic, strong) NSButton *crossPlatformButton;
 
 @end
 
@@ -29,6 +30,7 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     [self.view addSubview:self.seedButton];
+    [self.view addSubview:self.crossPlatformButton];
     self.classNameTF.stringValue = [ZZUIHelperConfig sharedInstance].classPrefix;
     [self.superClassCobox addItemsWithObjectValues:[ZZClassHelper sharedInstance].superClassArray];
     [self.superClassCobox selectItemAtIndex:0];
@@ -89,12 +91,24 @@
 
 }
 
+- (void)CrossPlatformClickEvent {
+    
+}
+
 - (NSButton *)seedButton {
     if (!_seedButton) {
         _seedButton = [NSButton buttonWithTitle:@"SEEDCode" target:self action:@selector(SEEDGenerator)];
         _seedButton.frame = CGRectMake(26, 20, 100, 20);
     }
     return _seedButton;
+}
+
+- (NSButton *)crossPlatformButton {
+    if (!_crossPlatformButton) {
+        _crossPlatformButton = [NSButton buttonWithTitle:@"跨平台" target:self action:@selector(CrossPlatformClickEvent)];
+        _crossPlatformButton.frame = CGRectMake(126, 20, 100, 20);
+    }
+    return _crossPlatformButton;
 }
 
 @end

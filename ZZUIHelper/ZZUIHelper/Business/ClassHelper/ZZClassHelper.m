@@ -54,8 +54,7 @@
              @"UICollectionViewCell",
              @"UIImageView",
              @"UIScrollView",
-             @"UIButton",
-             @"NSObject"
+             @"UIButton"
     ];
 }
 

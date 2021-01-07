@@ -24,8 +24,8 @@
         if (![[NSUserDefaults standardUserDefaults] objectForKey:@"isFirstRun"]) {
             [[NSUserDefaults standardUserDefaults] setObject:@"NO" forKey:@"isFirstRun"];
             // 默认设置
-            [config setAuthorName:@"ZZUIHelper"];
-            [config setProjectName:@"zhuanzhuan"];
+            [config setAuthorName:@"yhb"];
+            [config setProjectName:@"EHIProject"];
             [config setColors:[ZZUIHelperConfig zzColors]];
             [config setFonts:[ZZUIHelperConfig zzFonts]];
             [config resetToDefaultConfig];
@@ -36,7 +36,7 @@
 
 - (void)resetToDefaultConfig
 {
-    [self setClassPrefix:@"ZZ"];
+    [self setClassPrefix:@"EHI"];
     [self setNewLineLeftParenthesis:NO];
     [self setLayoutLibrary:ZZUIHelperLayoutLibraryMasonry];
 }

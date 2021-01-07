@@ -49,8 +49,6 @@
 		C2223A101E5876B1002CB428 /* ZZMainViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C2223A0F1E5876B1002CB428 /* ZZMainViewController.m */; };
 		C22569F91E67F048008E7785 /* ZZControlListItem.m in Sources */ = {isa = PBXBuildFile; fileRef = C22569F71E67F048008E7785 /* ZZControlListItem.m */; };
 		C22569FA1E67F048008E7785 /* ZZControlListItem.xib in Resources */ = {isa = PBXBuildFile; fileRef = C22569F81E67F048008E7785 /* ZZControlListItem.xib */; };
-		C2256A8D1E680808008E7785 /* MGSFragaria.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C2256A8C1E680808008E7785 /* MGSFragaria.framework */; };
-		C2256A8F1E680813008E7785 /* MGSFragaria.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = C2256A8C1E680808008E7785 /* MGSFragaria.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		C22D8D6E1E72509000A33083 /* ZZCreatorManager.m in Sources */ = {isa = PBXBuildFile; fileRef = C22D8D6D1E72509000A33083 /* ZZCreatorManager.m */; };
 		C22D8D771E72525C00A33083 /* ZZLazyLoadCreator.m in Sources */ = {isa = PBXBuildFile; fileRef = C22D8D721E72525C00A33083 /* ZZLazyLoadCreator.m */; };
 		C22D8D781E72525C00A33083 /* ZZUIResponder+CodeCreator.m in Sources */ = {isa = PBXBuildFile; fileRef = C22D8D741E72525C00A33083 /* ZZUIResponder+CodeCreator.m */; };
@@ -164,16 +162,23 @@
 		C2D738CC1E74F96000344E5F /* ZZPropertyAreaViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C2D738CB1E74F96000344E5F /* ZZPropertyAreaViewController.m */; };
 		C2D738E21E752FA000344E5F /* ZZMasonryAttribute.m in Sources */ = {isa = PBXBuildFile; fileRef = C2D738DF1E752FA000344E5F /* ZZMasonryAttribute.m */; };
 		C2D738E31E752FA000344E5F /* ZZUIView+Masonry.m in Sources */ = {isa = PBXBuildFile; fileRef = C2D738E11E752FA000344E5F /* ZZUIView+Masonry.m */; };
+		DA42427725A7239C009B88F7 /* MGSFragaria.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C2256A8C1E680808008E7785 /* MGSFragaria.framework */; };
+		DA42427825A7239C009B88F7 /* MGSFragaria.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = C2256A8C1E680808008E7785 /* MGSFragaria.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		DA42428725A77108009B88F7 /* ZZCrossPlatformTabViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = DA42428625A77108009B88F7 /* ZZCrossPlatformTabViewController.m */; };
+		DA42428F25A77936009B88F7 /* ZZCellModelViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = DA42428D25A77936009B88F7 /* ZZCellModelViewController.m */; };
+		DA42429025A77936009B88F7 /* ZZCellModelViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = DA42428E25A77936009B88F7 /* ZZCellModelViewController.xib */; };
+		DA42429725A77AD7009B88F7 /* ZZSEEDCodeAreaViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = DA42429525A77AD7009B88F7 /* ZZSEEDCodeAreaViewController.m */; };
+		DA42429825A77AD7009B88F7 /* ZZSEEDCodeAreaViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = DA42429625A77AD7009B88F7 /* ZZSEEDCodeAreaViewController.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
-		C2256A901E680813008E7785 /* Embed Frameworks */ = {
+		DA42427925A7239C009B88F7 /* Embed Frameworks */ = {
 			isa = PBXCopyFilesBuildPhase;
 			buildActionMask = 2147483647;
 			dstPath = "";
 			dstSubfolderSpec = 10;
 			files = (
-				C2256A8F1E680813008E7785 /* MGSFragaria.framework in Embed Frameworks */,
+				DA42427825A7239C009B88F7 /* MGSFragaria.framework in Embed Frameworks */,
 			);
 			name = "Embed Frameworks";
 			runOnlyForDeploymentPostprocessing = 0;
@@ -448,6 +453,14 @@
 		C2D738DF1E752FA000344E5F /* ZZMasonryAttribute.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZZMasonryAttribute.m; sourceTree = "<group>"; };
 		C2D738E01E752FA000344E5F /* ZZUIView+Masonry.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "ZZUIView+Masonry.h"; sourceTree = "<group>"; };
 		C2D738E11E752FA000344E5F /* ZZUIView+Masonry.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "ZZUIView+Masonry.m"; sourceTree = "<group>"; };
+		DA42428525A77108009B88F7 /* ZZCrossPlatformTabViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ZZCrossPlatformTabViewController.h; sourceTree = "<group>"; };
+		DA42428625A77108009B88F7 /* ZZCrossPlatformTabViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ZZCrossPlatformTabViewController.m; sourceTree = "<group>"; };
+		DA42428C25A77936009B88F7 /* ZZCellModelViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ZZCellModelViewController.h; sourceTree = "<group>"; };
+		DA42428D25A77936009B88F7 /* ZZCellModelViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ZZCellModelViewController.m; sourceTree = "<group>"; };
+		DA42428E25A77936009B88F7 /* ZZCellModelViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ZZCellModelViewController.xib; sourceTree = "<group>"; };
+		DA42429425A77AD7009B88F7 /* ZZSEEDCodeAreaViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ZZSEEDCodeAreaViewController.h; sourceTree = "<group>"; };
+		DA42429525A77AD7009B88F7 /* ZZSEEDCodeAreaViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ZZSEEDCodeAreaViewController.m; sourceTree = "<group>"; };
+		DA42429625A77AD7009B88F7 /* ZZSEEDCodeAreaViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ZZSEEDCodeAreaViewController.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -455,7 +468,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				C2256A8D1E680808008E7785 /* MGSFragaria.framework in Frameworks */,
+				DA42427725A7239C009B88F7 /* MGSFragaria.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -465,6 +478,7 @@
 		0480D2E625A6FA5B00C6DA03 /* ZZNewSEEDFileViewController */ = {
 			isa = PBXGroup;
 			children = (
+				DA42427B25A767F4009B88F7 /* ZZSEEDAreaFileViewController */,
 				0480D2EA25A704FC00C6DA03 /* ZZSEEDNewFileViewController.h */,
 				0480D2EB25A704FC00C6DA03 /* ZZSEEDNewFileViewController.m */,
 				0480D2EC25A704FC00C6DA03 /* ZZSEEDNewFileViewController.xib */,
@@ -803,6 +817,7 @@
 		C22239E31E5815F5002CB428 /* Modules */ = {
 			isa = PBXGroup;
 			children = (
+				DA42427A25A767E8009B88F7 /* New Group */,
 				C21789C51E55D64500AF8BEE /* Main.storyboard */,
 				C2223A081E5875DA002CB428 /* ZZCodeAreaViewController */,
 				C2A10C4C1E5A1583000960D9 /* ZZControlAreaViewController */,
@@ -821,6 +836,7 @@
 		C2223A081E5875DA002CB428 /* ZZCodeAreaViewController */ = {
 			isa = PBXGroup;
 			children = (
+				DA42427F25A770A3009B88F7 /* ZZCrossPlatformViewController */,
 				C2B3F5FB1E62FB18000E42CE /* ZZCodeHFileViewController */,
 				C2B3F5FD1E62FB18000E42CE /* ZZCodeMFileViewController */,
 				C2223A091E5875F8002CB428 /* ZZCodeAreaViewController.h */,
@@ -1391,6 +1407,43 @@
 			path = Masonry;
 			sourceTree = "<group>";
 		};
+		DA42427A25A767E8009B88F7 /* New Group */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = "New Group";
+			sourceTree = "<group>";
+		};
+		DA42427B25A767F4009B88F7 /* ZZSEEDAreaFileViewController */ = {
+			isa = PBXGroup;
+			children = (
+				DA42428825A77905009B88F7 /* CellModelViewController */,
+				DA42429425A77AD7009B88F7 /* ZZSEEDCodeAreaViewController.h */,
+				DA42429525A77AD7009B88F7 /* ZZSEEDCodeAreaViewController.m */,
+				DA42429625A77AD7009B88F7 /* ZZSEEDCodeAreaViewController.xib */,
+			);
+			path = ZZSEEDAreaFileViewController;
+			sourceTree = "<group>";
+		};
+		DA42427F25A770A3009B88F7 /* ZZCrossPlatformViewController */ = {
+			isa = PBXGroup;
+			children = (
+				DA42428525A77108009B88F7 /* ZZCrossPlatformTabViewController.h */,
+				DA42428625A77108009B88F7 /* ZZCrossPlatformTabViewController.m */,
+			);
+			path = ZZCrossPlatformViewController;
+			sourceTree = "<group>";
+		};
+		DA42428825A77905009B88F7 /* CellModelViewController */ = {
+			isa = PBXGroup;
+			children = (
+				DA42428C25A77936009B88F7 /* ZZCellModelViewController.h */,
+				DA42428D25A77936009B88F7 /* ZZCellModelViewController.m */,
+				DA42428E25A77936009B88F7 /* ZZCellModelViewController.xib */,
+			);
+			path = CellModelViewController;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -1401,7 +1454,7 @@
 				C21789B31E55D64500AF8BEE /* Sources */,
 				C21789B41E55D64500AF8BEE /* Frameworks */,
 				C21789B51E55D64500AF8BEE /* Resources */,
-				C2256A901E680813008E7785 /* Embed Frameworks */,
+				DA42427925A7239C009B88F7 /* Embed Frameworks */,
 			);
 			buildRules = (
 			);
@@ -1419,11 +1472,12 @@
 			isa = PBXProject;
 			attributes = {
 				CLASSPREFIX = ZZ;
-				LastUpgradeCheck = 0820;
+				LastUpgradeCheck = 1230;
 				ORGANIZATIONNAME = "李伯坤";
 				TargetAttributes = {
 					C21789B61E55D64500AF8BEE = {
 						CreatedOnToolsVersion = 8.2.1;
+						DevelopmentTeam = WSJK7MN7ZH;
 						ProvisioningStyle = Automatic;
 					};
 				};
@@ -1463,6 +1517,7 @@
 				C2AC3AA81E78F79D006FB8C3 /* UISegmentedControl.tiff in Resources */,
 				0480D2EE25A704FC00C6DA03 /* ZZSEEDNewFileViewController.xib in Resources */,
 				C2AC3AA21E78F79D006FB8C3 /* UIPageControl.tiff in Resources */,
+				DA42429825A77AD7009B88F7 /* ZZSEEDCodeAreaViewController.xib in Resources */,
 				C2AC3A961E78F79D006FB8C3 /* UIBarButtonItemFixedSpace.tiff in Resources */,
 				C2AC3AA91E78F79D006FB8C3 /* UISlider.tiff in Resources */,
 				C2D738C51E74F8ED00344E5F /* ZZPropertyXYCell.xib in Resources */,
@@ -1483,6 +1538,7 @@
 				C2AC3AAE1E78F79D006FB8C3 /* UITabBarItem.tiff in Resources */,
 				C2AC3AAA1E78F79D006FB8C3 /* UIStepper.tiff in Resources */,
 				C22569FA1E67F048008E7785 /* ZZControlListItem.xib in Resources */,
+				DA42429025A77936009B88F7 /* ZZCellModelViewController.xib in Resources */,
 				C2AC3A9E1E78F79D006FB8C3 /* UILabel.tiff in Resources */,
 				C21789C71E55D64500AF8BEE /* Main.storyboard in Resources */,
 				C2AC3AA01E78F79D006FB8C3 /* UINavigationController.tiff in Resources */,
@@ -1515,11 +1571,13 @@
 			buildActionMask = 2147483647;
 			files = (
 				C22D8D811E72529F00A33083 /* ZZCreatorModel.m in Sources */,
+				DA42429725A77AD7009B88F7 /* ZZSEEDCodeAreaViewController.m in Sources */,
 				C2D738C21E74F8ED00344E5F /* ZZPropertyStringCell.m in Sources */,
 				C2D738C91E74F8ED00344E5F /* ZZPropertyLayoutViewController.m in Sources */,
 				C2D6CA291E5BE12700EEF76B /* MASViewConstraint.m in Sources */,
 				C21789BF1E55D64500AF8BEE /* main.m in Sources */,
 				C21DDF111E6FF080000BCD9C /* ZZUIView.m in Sources */,
+				DA42428F25A77936009B88F7 /* ZZCellModelViewController.m in Sources */,
 				C22D8D881E728A7D00A33083 /* ZZSetupCreator.m in Sources */,
 				C21DDEDD1E6FF022000BCD9C /* ZZUICollectionViewDataSource.m in Sources */,
 				C21DDF221E6FF2BC000BCD9C /* ZZUIResponder+ClassHelper.m in Sources */,
@@ -1575,6 +1633,7 @@
 				C2D6CA251E5BE12700EEF76B /* MASConstraint.m in Sources */,
 				C21DDF011E6FF067000BCD9C /* ZZUITableViewDataSource.m in Sources */,
 				C28FDA7F1E6B00D400AE41A2 /* ZZProperty.m in Sources */,
+				DA42428725A77108009B88F7 /* ZZCrossPlatformTabViewController.m in Sources */,
 				C21DDEC91E6FEFC8000BCD9C /* ZZUIViewController.m in Sources */,
 				C2D6CA771E5BE14E00EEF76B /* ZZNSMutableArray.m in Sources */,
 				C21DDF021E6FF067000BCD9C /* ZZUITableViewDelegate.m in Sources */,
@@ -1643,15 +1702,24 @@
 				CLANG_CXX_LIBRARY = "libc++";
 				CLANG_ENABLE_MODULES = YES;
 				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
 				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
 				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
 				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
 				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
 				CLANG_WARN_EMPTY_BODY = YES;
 				CLANG_WARN_ENUM_CONVERSION = YES;
 				CLANG_WARN_INFINITE_RECURSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
 				CLANG_WARN_SUSPICIOUS_MOVE = YES;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
@@ -1660,6 +1728,7 @@
 				DEBUG_INFORMATION_FORMAT = dwarf;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				ENABLE_TESTABILITY = YES;
+				"EXCLUDED_ARCHS[sdk=*]" = arm64;
 				GCC_C_LANGUAGE_STANDARD = gnu99;
 				GCC_DYNAMIC_NO_PIC = NO;
 				GCC_NO_COMMON_BLOCKS = YES;
@@ -1676,7 +1745,7 @@
 				GCC_WARN_UNUSED_VARIABLE = YES;
 				MACOSX_DEPLOYMENT_TARGET = 10.12;
 				MTL_ENABLE_DEBUG_INFO = YES;
-				ONLY_ACTIVE_ARCH = YES;
+				ONLY_ACTIVE_ARCH = NO;
 				SDKROOT = macosx;
 			};
 			name = Debug;
@@ -1690,15 +1759,24 @@
 				CLANG_CXX_LIBRARY = "libc++";
 				CLANG_ENABLE_MODULES = YES;
 				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
 				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
 				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
 				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
 				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
 				CLANG_WARN_EMPTY_BODY = YES;
 				CLANG_WARN_ENUM_CONVERSION = YES;
 				CLANG_WARN_INFINITE_RECURSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
 				CLANG_WARN_SUSPICIOUS_MOVE = YES;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
@@ -1717,6 +1795,7 @@
 				GCC_WARN_UNUSED_VARIABLE = YES;
 				MACOSX_DEPLOYMENT_TARGET = 10.12;
 				MTL_ENABLE_DEBUG_INFO = NO;
+				ONLY_ACTIVE_ARCH = NO;
 				SDKROOT = macosx;
 			};
 			name = Release;
@@ -1725,7 +1804,9 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "-";
 				COMBINE_HIDPI_IMAGES = YES;
+				DEVELOPMENT_TEAM = WSJK7MN7ZH;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)/ZZUIHelper",
@@ -1744,7 +1825,9 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "-";
 				COMBINE_HIDPI_IMAGES = YES;
+				DEVELOPMENT_TEAM = WSJK7MN7ZH;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)/ZZUIHelper",

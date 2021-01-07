@@ -8,7 +8,6 @@
 
 #import "ZZWindowController.h"
 #import "ZZNewFileViewController.h"
-#import "ZZLazyLoadCreator.h"
 
 @interface ZZWindowController ()
 

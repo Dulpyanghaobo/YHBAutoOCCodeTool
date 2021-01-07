@@ -27,6 +27,7 @@
     [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(reloadData) name:NOTI_CLASS_PROPERTY_CHANGED object:nil];
     [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(reloadData) name:NOTI_CLASS_PROPERTY_EDIT object:nil];
     [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(reloadData) name:NOTI_NEW_PROJECT object:nil];
+
 }
 
 - (void)dealloc{
@@ -36,12 +37,6 @@
 - (void)reloadData
 {
     if ([ZZClassHelper sharedInstance].curClass) {
-//        if ([[ZZClassHelper sharedInstance].curClass isKindOfClass:[ZZNSObject class]]) {
-//            ZZNSObject *curClass = [ZZClassHelper sharedInstance].curClass;
-//            CGRect rect = self.fragaria.textView.visibleRect;
-//            [self.fragaria setString:[[ZZCreatorManager sharedInstance] hFileForViewClass:curClass]];
-//
-//        }
         ZZUIResponder *curClass = [ZZClassHelper sharedInstance].curClass;
         CGRect rect = self.fragaria.textView.visibleRect;
         [self.fragaria setString:[[ZZCreatorManager sharedInstance] hFileForViewClass:curClass]];
@@ -51,6 +46,7 @@
         self.curClass = curClass;
     }
 }
+
 
 #pragma mark - # Getter
 - (MGSFragaria *)fragaria

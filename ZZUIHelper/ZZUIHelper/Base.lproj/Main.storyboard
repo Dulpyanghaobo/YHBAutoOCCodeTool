@@ -606,7 +606,7 @@
                                 <modifierMask key="keyEquivalentModifierMask"/>
                                 <menu key="submenu" title="Help" systemMenu="help" id="F2S-fz-NVQ">
                                     <items>
-                                        <menuItem title="ZZUIHelper Help" keyEquivalent="?" id="FKE-Sm-Kum">
+                                        <menuItem title="ZZUIHelper Help" state="on" keyEquivalent="?" id="FKE-Sm-Kum">
                                             <connections>
                                                 <action selector="showHelp:" target="Ady-hI-5gd" id="y7X-2Q-9no"/>
                                             </connections>
@@ -637,6 +637,10 @@
                         <value key="minSize" type="size" width="1000" height="600"/>
                         <toolbar key="toolbar" implicitIdentifier="557F7765-2D10-427D-922B-D35FF651B72A" autosavesConfiguration="NO" displayMode="iconAndLabel" sizeMode="regular" id="ezI-WB-37G">
                             <allowedToolbarItems>
+                                <toolbarItem implicitItemIdentifier="9F5FB132-7721-4EFD-9EE7-D0C0004A910C" label="自动化测试" paletteLabel="自动化测试" tag="-1" image="NSTouchBarPlayPauseTemplate" id="HX9-yi-sam">
+                                    <size key="minSize" width="55.5" height="26"/>
+                                    <size key="maxSize" width="55.5" height="26"/>
+                                </toolbarItem>
                                 <toolbarItem implicitItemIdentifier="NSToolbarShowColorsItem" id="cYT-yg-dp0"/>
                                 <toolbarItem implicitItemIdentifier="NSToolbarShowFontsItem" id="Egb-gI-Mf6"/>
                                 <toolbarItem implicitItemIdentifier="NSToolbarPrintItem" id="dkK-xV-jbh"/>
@@ -669,6 +673,7 @@
                                 <toolbarItem reference="ikQ-eq-UHg"/>
                                 <toolbarItem reference="HL0-sb-wsU"/>
                                 <toolbarItem reference="DLI-T6-xCt"/>
+                                <toolbarItem reference="HX9-yi-sam"/>
                             </defaultToolbarItems>
                         </toolbar>
                         <connections>
@@ -879,7 +884,7 @@
         <!--代码区-->
         <scene sceneID="bJk-8j-oru">
             <objects>
-                <tabViewController title="代码区" selectedTabViewItemIndex="0" id="XFB-eZ-pNZ" customClass="ZZCodeAreaViewController" sceneMemberID="viewController">
+                <tabViewController title="代码区" selectedTabViewItemIndex="1" id="XFB-eZ-pNZ" customClass="ZZCodeAreaViewController" sceneMemberID="viewController">
                     <tabViewItems>
                         <tabViewItem identifier="" id="2OG-XA-wYW"/>
                         <tabViewItem identifier="" id="MGP-jM-uiF"/>
@@ -1653,13 +1658,13 @@
                         <autoresizingMask key="autoresizingMask"/>
                         <subviews>
                             <scrollView wantsLayer="YES" borderType="none" autohidesScrollers="YES" horizontalLineScroll="51" horizontalPageScroll="10" verticalLineScroll="51" verticalPageScroll="10" usesPredominantAxisScrolling="NO" translatesAutoresizingMaskIntoConstraints="NO" id="4Ua-E9-LcR">
-                                <rect key="frame" x="0.0" y="0.0" width="172" height="252"/>
+                                <rect key="frame" x="0.0" y="0.0" width="172" height="160"/>
                                 <clipView key="contentView" id="r6e-I5-1IV">
-                                    <rect key="frame" x="0.0" y="0.0" width="172" height="252"/>
+                                    <rect key="frame" x="0.0" y="0.0" width="172" height="160"/>
                                     <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                                     <subviews>
                                         <tableView verticalHuggingPriority="750" allowsExpansionToolTips="YES" columnAutoresizingStyle="lastColumnOnly" columnSelection="YES" multipleSelection="NO" autosaveColumns="NO" rowHeight="49" rowSizeStyle="automatic" headerView="e9T-Z5-NrQ" viewBased="YES" id="Rbp-wF-3Ow">
-                                            <rect key="frame" x="0.0" y="0.0" width="213" height="229"/>
+                                            <rect key="frame" x="0.0" y="0.0" width="213" height="137"/>
                                             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                                             <size key="intercellSpacing" width="3" height="2"/>
                                             <color key="backgroundColor" name="controlBackgroundColor" catalog="System" colorSpace="catalog"/>
@@ -1740,8 +1745,8 @@
                                         </tableView>
                                     </subviews>
                                 </clipView>
-                                <scroller key="horizontalScroller" wantsLayer="YES" verticalHuggingPriority="750" horizontal="YES" id="A9Z-OG-8zR">
-                                    <rect key="frame" x="0.0" y="236" width="172" height="16"/>
+                                <scroller key="horizontalScroller" wantsLayer="YES" verticalHuggingPriority="750" doubleValue="0.024390243902439025" horizontal="YES" id="A9Z-OG-8zR">
+                                    <rect key="frame" x="0.0" y="144" width="172" height="16"/>
                                     <autoresizingMask key="autoresizingMask"/>
                                 </scroller>
                                 <scroller key="verticalScroller" hidden="YES" wantsLayer="YES" verticalHuggingPriority="750" horizontal="NO" id="g8K-iW-49j">
@@ -1778,13 +1783,13 @@
                         <autoresizingMask key="autoresizingMask"/>
                         <subviews>
                             <scrollView borderType="none" autohidesScrollers="YES" horizontalLineScroll="57" horizontalPageScroll="10" verticalLineScroll="57" verticalPageScroll="10" usesPredominantAxisScrolling="NO" translatesAutoresizingMaskIntoConstraints="NO" id="BjP-j1-JEF">
-                                <rect key="frame" x="0.0" y="0.0" width="445" height="252"/>
+                                <rect key="frame" x="0.0" y="0.0" width="445" height="160"/>
                                 <clipView key="contentView" id="jKs-7R-afo">
-                                    <rect key="frame" x="0.0" y="0.0" width="445" height="252"/>
+                                    <rect key="frame" x="0.0" y="0.0" width="445" height="160"/>
                                     <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                                     <subviews>
                                         <tableView verticalHuggingPriority="750" allowsExpansionToolTips="YES" columnAutoresizingStyle="lastColumnOnly" columnSelection="YES" multipleSelection="NO" autosaveColumns="NO" rowHeight="55" rowSizeStyle="automatic" headerView="8m3-74-tLz" viewBased="YES" id="TzQ-9B-Acc">
-                                            <rect key="frame" x="0.0" y="0.0" width="445" height="229"/>
+                                            <rect key="frame" x="0.0" y="0.0" width="445" height="137"/>
                                             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                                             <size key="intercellSpacing" width="3" height="2"/>
                                             <color key="backgroundColor" name="controlBackgroundColor" catalog="System" colorSpace="catalog"/>
@@ -2027,6 +2032,7 @@
     </scenes>
     <resources>
         <image name="NSAddTemplate" width="14" height="13"/>
+        <image name="NSTouchBarPlayPauseTemplate" width="23" height="13"/>
         <image name="bar0" width="256" height="256"/>
         <image name="bar1" width="256" height="256"/>
         <image name="close" width="15" height="15"/>

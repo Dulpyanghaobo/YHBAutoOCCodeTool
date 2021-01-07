@@ -7,23 +7,27 @@
 //
 
 #import "ZZCodeAreaViewController.h"
+#import "ZZSEEDCodeAreaViewController.h"
+
 
 @interface ZZCodeAreaViewController ()
-
 @end
 
 @implementation ZZCodeAreaViewController
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-
     [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(reloadData) name:NOTI_NEW_PROJECT object:nil];
+    [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(reloadSEEDData) name:NOTI_NEW_SEEDPROJECT object:nil];
+
     [self setSelectedTabViewItemIndex:1];
 }
 
 - (void)dealloc{
     [[NSNotificationCenter defaultCenter] removeObserver:self];
 }
+
+
 
 - (void)reloadData
 {
@@ -36,6 +40,9 @@
         [self setSelectedTabViewItemIndex:1];
     });
 }
-
+- (void)reloadSEEDData {
+    ZZSEEDCodeAreaViewController *seedAreaVC = [[ZZSEEDCodeAreaViewController alloc]init];
+    self.view.window.contentView = seedAreaVC.view;
+}
 
 @end
