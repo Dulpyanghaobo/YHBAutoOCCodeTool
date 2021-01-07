@@ -9,6 +9,8 @@
 #import "ZZNewFileViewController.h"
 #import "ZZSEEDNewFileViewController.h"
 #import "ZZNewCrossPlatformViewController.h"
+#import "ZZNewInterfaceStipulateViewController.h"
+
 
 @interface ZZNewFileViewController () <NSComboBoxDelegate>
 
@@ -24,6 +26,10 @@
 
 @property (nonatomic, strong) NSButton *crossPlatformButton;
 
+//接口定义
+@property (nonatomic, strong) NSButton *interfaceButton;
+
+
 @end
 
 @implementation ZZNewFileViewController
@@ -32,6 +38,7 @@
     [super viewDidLoad];
     [self.view addSubview:self.seedButton];
     [self.view addSubview:self.crossPlatformButton];
+    [self.view addSubview:self.interfaceButton];
     self.classNameTF.stringValue = [ZZUIHelperConfig sharedInstance].classPrefix;
     [self.superClassCobox addItemsWithObjectValues:[ZZClassHelper sharedInstance].superClassArray];
     [self.superClassCobox selectItemAtIndex:0];
@@ -92,6 +99,12 @@
 
 }
 
+- (void)interfaceEvent {
+    ZZNewInterfaceStipulateViewController *vc = [[ZZNewInterfaceStipulateViewController alloc]initWithNibName:@"ZZNewInterfaceStipulateViewController" bundle:nil];
+    [self presentViewControllerAsSheet:vc];
+    [self dismissViewController:self];
+}
+
 - (void)CrossPlatformClickEvent {
     ZZNewCrossPlatformViewController *ViewController = [[ZZNewCrossPlatformViewController alloc]initWithNibName:@"ZZNewCrossPlatformViewController" bundle:nil];
     [self presentViewControllerAsSheet:ViewController];
@@ -113,6 +126,14 @@
         _crossPlatformButton.frame = CGRectMake(126, 20, 100, 20);
     }
     return _crossPlatformButton;
+}
+
+- (NSButton *)interfaceButton {
+    if (!_interfaceButton) {
+        _interfaceButton = [NSButton buttonWithTitle:@"接口定义" target:self action:@selector(interfaceEvent)];
+        _interfaceButton.frame = CGRectMake(26, 44, 100, 20);
+    }
+    return _interfaceButton;
 }
 
 @end

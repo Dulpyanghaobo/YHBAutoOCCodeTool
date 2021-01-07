@@ -173,6 +173,10 @@
 		DAF9A09F25A7836C00F46E35 /* ZZNewCrossPlatformViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = DAF9A09D25A7836C00F46E35 /* ZZNewCrossPlatformViewController.xib */; };
 		DAF9A0BB25A7A65200F46E35 /* ZZSEEDCodeAreaSplitViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = DAF9A0B925A7A65200F46E35 /* ZZSEEDCodeAreaSplitViewController.m */; };
 		DAF9A0BC25A7A65200F46E35 /* ZZSEEDCodeAreaSplitViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = DAF9A0BA25A7A65200F46E35 /* ZZSEEDCodeAreaSplitViewController.xib */; };
+		DAF9A0C525A7BE6F00F46E35 /* ZZNewInterfaceStipulateViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = DAF9A0C325A7BE6F00F46E35 /* ZZNewInterfaceStipulateViewController.m */; };
+		DAF9A0C625A7BE6F00F46E35 /* ZZNewInterfaceStipulateViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = DAF9A0C425A7BE6F00F46E35 /* ZZNewInterfaceStipulateViewController.xib */; };
+		DAF9A0D025A7C02600F46E35 /* ZZNewInterfaceModelViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = DAF9A0CE25A7C02600F46E35 /* ZZNewInterfaceModelViewController.m */; };
+		DAF9A0D125A7C02600F46E35 /* ZZNewInterfaceModelViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = DAF9A0CF25A7C02600F46E35 /* ZZNewInterfaceModelViewController.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -471,6 +475,12 @@
 		DAF9A0B825A7A65200F46E35 /* ZZSEEDCodeAreaSplitViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ZZSEEDCodeAreaSplitViewController.h; sourceTree = "<group>"; };
 		DAF9A0B925A7A65200F46E35 /* ZZSEEDCodeAreaSplitViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ZZSEEDCodeAreaSplitViewController.m; sourceTree = "<group>"; };
 		DAF9A0BA25A7A65200F46E35 /* ZZSEEDCodeAreaSplitViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ZZSEEDCodeAreaSplitViewController.xib; sourceTree = "<group>"; };
+		DAF9A0C225A7BE6F00F46E35 /* ZZNewInterfaceStipulateViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ZZNewInterfaceStipulateViewController.h; sourceTree = "<group>"; };
+		DAF9A0C325A7BE6F00F46E35 /* ZZNewInterfaceStipulateViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ZZNewInterfaceStipulateViewController.m; sourceTree = "<group>"; };
+		DAF9A0C425A7BE6F00F46E35 /* ZZNewInterfaceStipulateViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ZZNewInterfaceStipulateViewController.xib; sourceTree = "<group>"; };
+		DAF9A0CD25A7C02600F46E35 /* ZZNewInterfaceModelViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ZZNewInterfaceModelViewController.h; sourceTree = "<group>"; };
+		DAF9A0CE25A7C02600F46E35 /* ZZNewInterfaceModelViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ZZNewInterfaceModelViewController.m; sourceTree = "<group>"; };
+		DAF9A0CF25A7C02600F46E35 /* ZZNewInterfaceModelViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ZZNewInterfaceModelViewController.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -562,6 +572,7 @@
 		C21DDEA91E6FEF42000BCD9C /* iOS */ = {
 			isa = PBXGroup;
 			children = (
+				DAF9A0D325A7C3DC00F46E35 /* ZZNSObject */,
 				C21DDEC31E6FEFB6000BCD9C /* ZZUIResponder */,
 				C21DDEAA1E6FEF42000BCD9C /* ViewControllers */,
 				C21DDEAC1E6FEF42000BCD9C /* Views */,
@@ -827,6 +838,7 @@
 		C22239E31E5815F5002CB428 /* Modules */ = {
 			isa = PBXGroup;
 			children = (
+				DAF9A0BE25A7BE1E00F46E35 /* ZZNewInterfaceModelViewController */,
 				DAF9A09A25A7831500F46E35 /* ZZNewCrossPlatformViewController */,
 				C21789C51E55D64500AF8BEE /* Main.storyboard */,
 				C2223A081E5875DA002CB428 /* ZZCodeAreaViewController */,
@@ -1460,6 +1472,34 @@
 			path = ZZNewCrossPlatformViewController;
 			sourceTree = "<group>";
 		};
+		DAF9A0BE25A7BE1E00F46E35 /* ZZNewInterfaceModelViewController */ = {
+			isa = PBXGroup;
+			children = (
+				DAF9A0C725A7BF9200F46E35 /* ZZNewInterfaceModel */,
+				DAF9A0C225A7BE6F00F46E35 /* ZZNewInterfaceStipulateViewController.h */,
+				DAF9A0C325A7BE6F00F46E35 /* ZZNewInterfaceStipulateViewController.m */,
+				DAF9A0C425A7BE6F00F46E35 /* ZZNewInterfaceStipulateViewController.xib */,
+			);
+			path = ZZNewInterfaceModelViewController;
+			sourceTree = "<group>";
+		};
+		DAF9A0C725A7BF9200F46E35 /* ZZNewInterfaceModel */ = {
+			isa = PBXGroup;
+			children = (
+				DAF9A0CD25A7C02600F46E35 /* ZZNewInterfaceModelViewController.h */,
+				DAF9A0CE25A7C02600F46E35 /* ZZNewInterfaceModelViewController.m */,
+				DAF9A0CF25A7C02600F46E35 /* ZZNewInterfaceModelViewController.xib */,
+			);
+			path = ZZNewInterfaceModel;
+			sourceTree = "<group>";
+		};
+		DAF9A0D325A7C3DC00F46E35 /* ZZNSObject */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = ZZNSObject;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -1538,6 +1578,7 @@
 				C2AC3A961E78F79D006FB8C3 /* UIBarButtonItemFixedSpace.tiff in Resources */,
 				C2AC3AA91E78F79D006FB8C3 /* UISlider.tiff in Resources */,
 				C2D738C51E74F8ED00344E5F /* ZZPropertyXYCell.xib in Resources */,
+				DAF9A0D125A7C02600F46E35 /* ZZNewInterfaceModelViewController.xib in Resources */,
 				C2AC3AB01E78F79D006FB8C3 /* UITableViewCell.tiff in Resources */,
 				C2AC3A9B1E78F79D006FB8C3 /* UICollectionViewController.tiff in Resources */,
 				C2D738BB1E74F8ED00344E5F /* ZZPropertyMethodCell.xib in Resources */,
@@ -1554,6 +1595,7 @@
 				C2A10CB21E5AEF0B000960D9 /* ZZNewPropertyViewController.xib in Resources */,
 				C2AC3AAE1E78F79D006FB8C3 /* UITabBarItem.tiff in Resources */,
 				C2AC3AAA1E78F79D006FB8C3 /* UIStepper.tiff in Resources */,
+				DAF9A0C625A7BE6F00F46E35 /* ZZNewInterfaceStipulateViewController.xib in Resources */,
 				C22569FA1E67F048008E7785 /* ZZControlListItem.xib in Resources */,
 				DA42429025A77936009B88F7 /* ZZCellModelViewController.xib in Resources */,
 				C2AC3A9E1E78F79D006FB8C3 /* UILabel.tiff in Resources */,
@@ -1615,6 +1657,7 @@
 				C2D738C01E74F8ED00344E5F /* ZZPropertySelectionCell.m in Sources */,
 				C2AEFB361E759D7200972320 /* ZZUIPageControl.m in Sources */,
 				C2D6CA2D1E5BE12700EEF76B /* ViewController+MASAdditions.m in Sources */,
+				DAF9A0C525A7BE6F00F46E35 /* ZZNewInterfaceStipulateViewController.m in Sources */,
 				C2D6CA2E1E5BE12700EEF76B /* README.md in Sources */,
 				C21DDF2F1E701386000BCD9C /* ZZColorSettingViewController.m in Sources */,
 				C21DDF0D1E6FF07B000BCD9C /* ZZUITextView.m in Sources */,
@@ -1685,6 +1728,7 @@
 				C2AEFB3F1E75AA3B00972320 /* ZZUIActivityIndicatorView.m in Sources */,
 				C21DDF2C1E700648000BCD9C /* ZZGeneralSettingViewController.m in Sources */,
 				C2A10CB11E5AEF0B000960D9 /* ZZNewPropertyViewController.m in Sources */,
+				DAF9A0D025A7C02600F46E35 /* ZZNewInterfaceModelViewController.m in Sources */,
 				C21DDECF1E6FEFF6000BCD9C /* ZZEvent.m in Sources */,
 				C2D6CA221E5BE12700EEF76B /* NSString+MMBJ.m in Sources */,
 				C21DDEE41E6FF02A000BCD9C /* ZZUICollectionViewFlowLayout.m in Sources */,
