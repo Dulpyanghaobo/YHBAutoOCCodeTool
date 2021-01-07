@@ -55,7 +55,7 @@
         [NSSplitViewItem splitViewItemWithViewController:deareaVC],
         [NSSplitViewItem splitViewItemWithViewController:[[ZZCellModelViewController alloc] initWithNibName:@"ZZCellModelViewController" bundle:nil]]
     ];
-    self.view.window.contentView = seedAreaVC.view;
+    self.view.window.contentViewController = seedAreaVC;
     }
 }
 

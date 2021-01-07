@@ -34,6 +34,7 @@
         [ZZClassHelper sharedInstance].curClass = object;
         [[NSNotificationCenter defaultCenter] postNotificationName:NOTI_NEW_PROJECT object:nil];
         [[NSNotificationCenter defaultCenter] postNotificationName:NOTI_NEW_SEEDPROJECT object:nil];
+        
         [self dismissViewController:self];
     }
 }
