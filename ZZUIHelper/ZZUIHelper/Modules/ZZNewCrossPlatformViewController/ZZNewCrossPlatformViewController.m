@@ -18,6 +18,10 @@
 
 @property (nonatomic, strong) NSButton *ocButton;
 
+@property (nonatomic, strong) NSButton *kotlinButton;
+
+@property (nonatomic, strong) NSButton *swiftButton;
+
 @property (nonatomic, assign)BOOL isSelectJava ;
 
 @property (nonatomic, assign)BOOL isSelectKotlin ;
@@ -34,6 +38,8 @@
     [super viewDidLoad];
     [self.view addSubview:self.javaButton];
     [self.view addSubview:self.ocButton];
+    [self.view addSubview:self.kotlinButton];
+    [self.view addSubview:self.swiftButton];
     [self p_addMasonry];
 }
 
@@ -68,5 +74,21 @@
         [_ocButton setFrame:CGRectMake(320, 200, 100, 30)];
     }
     return _ocButton;
+}
+
+- (NSButton *)kotlinButton {
+    if (!_kotlinButton) {
+        _kotlinButton = [NSButton radioButtonWithTitle:@"kotlin" target:self action:@selector(kotlin_ClickEvent:)];
+        [_kotlinButton setFrame:CGRectMake(60, 150, 80, 30)];
+    }
+    return _kotlinButton;
+}
+
+- (NSButton *)swiftButton {
+    if (!_swiftButton) {
+        _swiftButton = [NSButton radioButtonWithTitle:@"swift" target:self action:@selector(swift_ClickEvent:)];
+        [_swiftButton setFrame:CGRectMake(320, 150, 80, 30)];
+    }
+    return _swiftButton;
 }
 @end
