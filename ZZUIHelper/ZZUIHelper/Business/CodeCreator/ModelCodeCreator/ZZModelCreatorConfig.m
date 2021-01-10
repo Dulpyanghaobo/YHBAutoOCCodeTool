@@ -43,7 +43,7 @@
         _filePartitionMode = ZZMFFilePartitionModeApart;
         _ignoreType = ZZMFIgnoreTypeAllDigital | ZZMFIgnoreTypeMutable;
         _baseClass = NSObject.self;
-        _framework = ZZMFFrameworkYY;
+        _framework = ZZMFFrameworkMJ;
         _needCopying = YES;
         _needCoding = YES;
         _nameHander = [ZZModelFileNameHandle new];

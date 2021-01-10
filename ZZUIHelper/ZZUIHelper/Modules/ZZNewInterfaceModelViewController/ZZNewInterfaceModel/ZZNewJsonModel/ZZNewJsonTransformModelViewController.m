@@ -24,20 +24,16 @@
     [panel setCanCreateDirectories:YES];
     [panel setCanChooseFiles:YES];
     [panel setCanChooseDirectories:YES];
-//    NSInteger result = [panel runModal];
-//    if (result == NSFileHandlingPanelCancelButton) {
-//        NSLog(@"%@",panel.URLs);
-//    }
-//    if (result == NSFileHandlingPanelOKButton) {
-//    }
     __block NSArray *chooseFiles;
     [panel beginSheetModalForWindow:[NSApp mainWindow] completionHandler:^(NSModalResponse result) {
         if (result == NSModalResponseOK) {
             chooseFiles = [panel URLs];
             NSLog(@"Click OK Choose files : %@",chooseFiles);
             NSData *fileData = [ZZFileManager readFileData:[chooseFiles firstObject]];
-            [ZZModelCreatorManager createFileWithName:@"demo2" data:fileData];
-
+            NSString *fileName = [[[chooseFiles firstObject] absoluteString] lastPathComponent];
+            NSString *NamePuffix = [fileName stringByReplacingOccurrencesOfString:@".json" withString:@""];
+            [ZZModelCreatorManager createFileWithName:[NSString stringWithFormat:@"%@",NamePuffix] data:fileData];
+            
         } else if (result == NSModalResponseCancel) {
             NSLog(@"Click cancels");
         }
