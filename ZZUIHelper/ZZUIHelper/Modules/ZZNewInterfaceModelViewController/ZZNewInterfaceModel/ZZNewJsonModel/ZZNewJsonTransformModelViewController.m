@@ -7,7 +7,8 @@
 //
 
 #import "ZZNewJsonTransformModelViewController.h"
-
+#import "ZZFileManager.h"
+#import "ZZModelCreatorManager.h"
 @interface ZZNewJsonTransformModelViewController ()
 
 @end
@@ -34,7 +35,11 @@
         if (result == NSModalResponseOK) {
             chooseFiles = [panel URLs];
             NSLog(@"Click OK Choose files : %@",chooseFiles);
-
+            NSData *fileData = [ZZFileManager readFileData:[chooseFiles firstObject]];
+//            if ([fileData isKindOfClass:NSData.class]) {
+//                fileData = [NSJSONSerialization JSONObjectWithData:fileData options:0 error:nil];
+//            }
+            [ZZModelCreatorManager createFileWithName:@"demo2" data:fileData];
         } else if (result == NSModalResponseCancel) {
             NSLog(@"Click cancels");
         }

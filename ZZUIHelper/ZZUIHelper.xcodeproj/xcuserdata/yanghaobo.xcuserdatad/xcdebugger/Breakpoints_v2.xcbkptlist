@@ -375,16 +375,48 @@
       <BreakpointProxy
          BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
          <BreakpointContent
-            uuid = "D5EAA117-1EFB-4EB9-BB0B-6365BEC062F4"
+            uuid = "E712A8F5-CC4F-435A-9BA8-A07E78FAD8DA"
             shouldBeEnabled = "Yes"
             ignoreCount = "0"
             continueAfterRunningActions = "No"
-            filePath = "ZZUIHelper/Modules/ZZNewInterfaceModelViewController/ZZNewInterfaceModel/ZZNewJsonModel/ZZNewJsonTransformModelViewController.m"
+            filePath = "ZZUIHelper/Business/CodeCreator/ModelCodeCreator/ZZModelCreatorManager.m"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "28"
-            endingLineNumber = "28"
-            landmarkName = "-uploadJson:"
+            startingLineNumber = "172"
+            endingLineNumber = "172"
+            landmarkName = "-creatWithPath:"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "243653D0-6049-4CBB-A04A-E3C30E44A786"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "ZZUIHelper/Business/CodeCreator/ModelCodeCreator/ZZModelCreatorManager.m"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "27"
+            endingLineNumber = "27"
+            landmarkName = "+createFileWithName:data:"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "D9C02BB4-F886-4A21-A889-700211BC2C1C"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "ZZUIHelper/Business/CodeCreator/ModelCodeCreator/ZZModelCreatorManager.m"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "31"
+            endingLineNumber = "31"
+            landmarkName = "+createFileWithName:data:config:"
             landmarkType = "7">
          </BreakpointContent>
       </BreakpointProxy>

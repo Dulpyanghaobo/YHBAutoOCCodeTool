@@ -180,6 +180,7 @@
 		DA8853AF25AA1C9B00878481 /* ZZMFCodeForParentHandler.m in Sources */ = {isa = PBXBuildFile; fileRef = DA8853AE25AA1C9B00878481 /* ZZMFCodeForParentHandler.m */; };
 		DA8853B825AA2F8700878481 /* ZZNewJsonTransformModelViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = DA8853B625AA2F8700878481 /* ZZNewJsonTransformModelViewController.m */; };
 		DA8853B925AA2F8700878481 /* ZZNewJsonTransformModelViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = DA8853B725AA2F8700878481 /* ZZNewJsonTransformModelViewController.xib */; };
+		DA8853C625AB186C00878481 /* ZZFileManager.m in Sources */ = {isa = PBXBuildFile; fileRef = DA8853C525AB186C00878481 /* ZZFileManager.m */; };
 		DAF9A09E25A7836C00F46E35 /* ZZNewCrossPlatformViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = DAF9A09C25A7836C00F46E35 /* ZZNewCrossPlatformViewController.m */; };
 		DAF9A09F25A7836C00F46E35 /* ZZNewCrossPlatformViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = DAF9A09D25A7836C00F46E35 /* ZZNewCrossPlatformViewController.xib */; };
 		DAF9A0BB25A7A65200F46E35 /* ZZSEEDCodeAreaSplitViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = DAF9A0B925A7A65200F46E35 /* ZZSEEDCodeAreaSplitViewController.m */; };
@@ -502,6 +503,8 @@
 		DA8853B525AA2F8700878481 /* ZZNewJsonTransformModelViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ZZNewJsonTransformModelViewController.h; sourceTree = "<group>"; };
 		DA8853B625AA2F8700878481 /* ZZNewJsonTransformModelViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ZZNewJsonTransformModelViewController.m; sourceTree = "<group>"; };
 		DA8853B725AA2F8700878481 /* ZZNewJsonTransformModelViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ZZNewJsonTransformModelViewController.xib; sourceTree = "<group>"; };
+		DA8853C425AB186C00878481 /* ZZFileManager.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ZZFileManager.h; sourceTree = "<group>"; };
+		DA8853C525AB186C00878481 /* ZZFileManager.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ZZFileManager.m; sourceTree = "<group>"; };
 		DAF9A09B25A7836C00F46E35 /* ZZNewCrossPlatformViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ZZNewCrossPlatformViewController.h; sourceTree = "<group>"; };
 		DAF9A09C25A7836C00F46E35 /* ZZNewCrossPlatformViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ZZNewCrossPlatformViewController.m; sourceTree = "<group>"; };
 		DAF9A09D25A7836C00F46E35 /* ZZNewCrossPlatformViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ZZNewCrossPlatformViewController.xib; sourceTree = "<group>"; };
@@ -565,6 +568,7 @@
 		C21789B91E55D64500AF8BEE /* ZZUIHelper */ = {
 			isa = PBXGroup;
 			children = (
+				DA8853BF25AB16CE00878481 /* ZZCommons */,
 				C2A10C191E59611C000960D9 /* Config */,
 				C2A10C431E5A0D5D000960D9 /* Business */,
 				C22239E31E5815F5002CB428 /* Modules */,
@@ -1564,6 +1568,23 @@
 			path = ZZNewJsonModel;
 			sourceTree = "<group>";
 		};
+		DA8853BF25AB16CE00878481 /* ZZCommons */ = {
+			isa = PBXGroup;
+			children = (
+				DA8853C025AB16D400878481 /* FileManager */,
+			);
+			path = ZZCommons;
+			sourceTree = "<group>";
+		};
+		DA8853C025AB16D400878481 /* FileManager */ = {
+			isa = PBXGroup;
+			children = (
+				DA8853C425AB186C00878481 /* ZZFileManager.h */,
+				DA8853C525AB186C00878481 /* ZZFileManager.m */,
+			);
+			path = FileManager;
+			sourceTree = "<group>";
+		};
 		DAF9A09A25A7831500F46E35 /* ZZNewCrossPlatformViewController */ = {
 			isa = PBXGroup;
 			children = (
@@ -1831,6 +1852,7 @@
 				C2D738C41E74F8ED00344E5F /* ZZPropertyXYCell.m in Sources */,
 				C2B3F5D31E60F307000E42CE /* ZZParam.m in Sources */,
 				C2AEFB431E75AC1000972320 /* ZZUIProgressView.m in Sources */,
+				DA8853C625AB186C00878481 /* ZZFileManager.m in Sources */,
 				C2D6CA261E5BE12700EEF76B /* MASConstraintMaker.m in Sources */,
 				0480D2ED25A704FC00C6DA03 /* ZZSEEDNewFileViewController.m in Sources */,
 				C21DDEF61E6FF053000BCD9C /* ZZUISwitch.m in Sources */,

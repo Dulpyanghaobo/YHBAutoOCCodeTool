@@ -32,6 +32,7 @@
 }
 
 + (void)createFileWithName:(NSString *)name data:(id)data config:(ZZModelCreatorConfig *)config path:(nullable NSString *)path {
+    [self private_createFileWithName:name data:data config:config path:path];
 }
 
 + (void)private_createFileWithName:(NSString *)name data:(id)data config:(ZZModelCreatorConfig *)config path:(nullable NSString *)path {
