@@ -10,7 +10,7 @@
 #import "ZZSEEDNewFileViewController.h"
 #import "ZZNewCrossPlatformViewController.h"
 #import "ZZNewInterfaceStipulateViewController.h"
-
+#import "ZZNewInterfaceModelViewController.h"
 
 @interface ZZNewFileViewController () <NSComboBoxDelegate>
 
@@ -100,7 +100,7 @@
 }
 
 - (void)interfaceEvent {
-    ZZNewInterfaceStipulateViewController *vc = [[ZZNewInterfaceStipulateViewController alloc]initWithNibName:@"ZZNewInterfaceStipulateViewController" bundle:nil];
+    ZZNewInterfaceModelViewController *vc = [[ZZNewInterfaceModelViewController alloc]initWithNibName:@"ZZNewInterfaceModelViewController" bundle:nil];
     [self presentViewControllerAsSheet:vc];
     [self dismissViewController:self];
 }

@@ -58,7 +58,7 @@
     NSString *authorName = self.authorName;
     NSString *projectName = self.projectName;
     NSString *dateString = [NSString stringWithFormat:@"%d/%d/%d", (int)[[NSDate date] year], (int)[[NSDate date] month], (int)[[NSDate date] day]];
-    NSString *codeString = [NSString stringWithFormat:@"//\n//  %@\n//  %@\n//\n//  Created by %@ on %@.\n//  Copyright © 2017年 %@. All rights reserved.\n//\n\n",
+    NSString *codeString = [NSString stringWithFormat:@"//\n//  %@\n//  %@\n//\n//  Created by %@ on %@.\n//  Copyright ©  %@. All rights reserved.\n//\n\n",
                             fileName,
                             projectName,
                             authorName, dateString,

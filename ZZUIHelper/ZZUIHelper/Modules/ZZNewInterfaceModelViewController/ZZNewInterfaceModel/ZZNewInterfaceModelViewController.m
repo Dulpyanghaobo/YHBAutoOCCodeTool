@@ -7,6 +7,7 @@
 //
 
 #import "ZZNewInterfaceModelViewController.h"
+#import "ZZNewJsonTransformModelViewController.h"
 
 @interface ZZNewInterfaceModelViewController ()
 
@@ -17,6 +18,13 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do view setup here.
+}
+- (IBAction)createModel:(id)sender {
+    ZZNewJsonTransformModelViewController *VC = [ZZNewJsonTransformModelViewController new];
+    [self presentViewControllerAsSheet:VC];
+    [self dismissViewController:self];
+}
+- (IBAction)createInterface:(id)sender {
 }
 
 @end
