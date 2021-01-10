@@ -133,13 +133,13 @@ fail:
       
         if ([value isKindOfClass:NSDecimalNumber.class]) {  //优先处理超长数字
             node.type = ZZMFNodeTypeNSString;
-        } else if (!(ignoreType & ZZMFIgnoreTypeBOOL) && [NSStringFromClass([value class]) isEqualToString:@"__NSCFBoolean"]) {
+        } else if ((ignoreType & ZZMFIgnoreTypeBOOL) && [NSStringFromClass([value class]) isEqualToString:@"__NSCFBoolean"]) {
             node.type = ZZMFNodeTypeBOOL;
-        } else if (!(ignoreType & ZZMFIgnoreTypeNSInteger) && strcmp([value objCType], "q") == 0) {
+        } else if ((ignoreType & ZZMFIgnoreTypeNSInteger) && strcmp([value objCType], "q") == 0) {
             node.type =ZZMFNodeTypeNSInteger;
-        } else if (!(ignoreType & ZZMFIgnoreTypeDouble) && strcmp([value objCType], "d") == 0) {
+        } else if ((ignoreType & ZZMFIgnoreTypeDouble) && strcmp([value objCType], "d") == 0) {
             node.type = ZZMFNodeTypeDouble;
-        } else if (!(ignoreType & ZZMFNodeTypeNSNumber)) {
+        } else if ((ignoreType & ZZMFNodeTypeNSNumber)) {
             node.type = ZZMFNodeTypeNSNumber;
         } else {
             node.type = ZZMFNodeTypeNSString;

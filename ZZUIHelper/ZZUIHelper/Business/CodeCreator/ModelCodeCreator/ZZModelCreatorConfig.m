@@ -40,7 +40,7 @@
     self = [super init];
     if (self) {
         _fileSuffix = @"Model";
-        _filePartitionMode = ZZMFFilePartitionModeTogether;
+        _filePartitionMode = ZZMFFilePartitionModeApart;
         _ignoreType = ZZMFIgnoreTypeAllDigital | ZZMFIgnoreTypeMutable;
         _baseClass = NSObject.self;
         _framework = ZZMFFrameworkYY;

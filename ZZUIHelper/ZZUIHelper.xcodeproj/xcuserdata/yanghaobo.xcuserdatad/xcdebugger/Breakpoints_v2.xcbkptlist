@@ -391,32 +391,80 @@
       <BreakpointProxy
          BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
          <BreakpointContent
-            uuid = "243653D0-6049-4CBB-A04A-E3C30E44A786"
+            uuid = "D57954C6-F1D4-4F2A-A7A7-4A3668F950BA"
             shouldBeEnabled = "Yes"
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "ZZUIHelper/Business/CodeCreator/ModelCodeCreator/ZZModelCreatorManager.m"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "27"
-            endingLineNumber = "27"
-            landmarkName = "+createFileWithName:data:"
+            startingLineNumber = "204"
+            endingLineNumber = "204"
+            landmarkName = "-creatFilesWithDirectoryPath:"
             landmarkType = "7">
          </BreakpointContent>
       </BreakpointProxy>
       <BreakpointProxy
          BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
          <BreakpointContent
-            uuid = "D9C02BB4-F886-4A21-A889-700211BC2C1C"
+            uuid = "73D6051F-F559-4ABF-BE62-34B810ED01CB"
             shouldBeEnabled = "Yes"
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "ZZUIHelper/Business/CodeCreator/ModelCodeCreator/ZZModelCreatorManager.m"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "31"
-            endingLineNumber = "31"
-            landmarkName = "+createFileWithName:data:config:"
+            startingLineNumber = "257"
+            endingLineNumber = "257"
+            landmarkName = "-dfs_mergeWithCodeInFileH:codeInFileM:node:"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "C92B39F7-22DD-4E44-9664-E38F4A357B14"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "ZZUIHelper/Business/CodeCreator/ModelCodeCreator/ZZModelCreatorManager.m"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "260"
+            endingLineNumber = "260"
+            landmarkName = "-dfs_mergeWithCodeInFileH:codeInFileM:node:"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "A4E4A17F-8591-4E26-9C15-BE101C10BB52"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "ZZUIHelper/Business/CodeCreator/ModelCodeCreator/ZZModelCreatorManager.m"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "134"
+            endingLineNumber = "134"
+            landmarkName = "-buildTreeWithParentClassName:key:value:"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "B78F223E-BE6C-449D-98B1-3009665B18D8"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "ZZUIHelper/Business/CodeCreator/ModelCodeCreator/ZZModelCreatorManager.m"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "149"
+            endingLineNumber = "149"
+            landmarkName = "-buildTreeWithParentClassName:key:value:"
             landmarkType = "7">
          </BreakpointContent>
       </BreakpointProxy>
