@@ -167,10 +167,10 @@ fail:
     
     //创建存放当前 json 模型文件的文件夹
     NSString *fileDirectoryPath = [self creatDirectoryWithPath:rootDirectoryPath.copy directoryName:self.rootNode.className cover:NO];
-    
-    NSLog(@"\n✨✨ YBModelFile ✨✨\n生成文件目录：\n%@", fileDirectoryPath);
-    
     [self creatFilesWithDirectoryPath:fileDirectoryPath];
+
+    NSAlert *alert = [NSAlert alertWithMessageText:@"已生成" defaultButton:@"确定" alternateButton:nil otherButton:nil informativeTextWithFormat:@"%@", [NSString stringWithFormat:@"\n✨✨ YBModelFile ✨✨\n生成文件目录：\n%@",fileDirectoryPath]];
+        [alert runModal];
 }
 
 - (NSString *)creatDirectoryWithPath:(NSString *)path directoryName:(NSString *)directoryName cover:(BOOL)cover {
